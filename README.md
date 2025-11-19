@@ -1,24 +1,24 @@
 -HopeBot-Arduino-R4-WiFi-Robot
 
-A smart autonomous robot powered by the Arduino UNO R4 WiFi. It creates its own WiFi Hotspot to display a live dashboard on your phone or computer, showing GPS location, obstacle distance, and PIR motion security alerts.
+  A smart autonomous robot powered by the Arduino UNO R4 WiFi. It creates its own WiFi Hotspot to display a live dashboard on your phone or   computer, showing GPS location, obstacle distance, and PIR motion security alerts.
 
 📂 Project Structure / Explanation of Files
 
-Main.ino: The master file that runs the robot. It coordinates the sensors, motors, and WiFi.
+  Main.ino: The master file that runs the robot. It coordinates the sensors, motors, and WiFi.
 
-gps_server.h: This file handles the complex WiFi logic. It creates the "hopebot" Hotspot, runs the Web Server for the dashboard, and decodes the raw GPS data.
+  gps_server.h: This file handles the complex WiFi logic. It creates the "hopebot" Hotspot, runs the Web Server for the dashboard, and       decodes the raw GPS data.
 
-webpage.h: Stores the actual HTML and JavaScript code for the dashboard interface you see in your browser.
+  webpage.h: Stores the actual HTML and JavaScript code for the dashboard interface you see in your browser.
 
-motors.h: Contains the specific driver logic to make the motors move forward, backward, and turn.
+  motors.h: Contains the specific driver logic to make the motors move forward, backward, and turn.
 
-ultrasonic.h: handles the math for converting sound waves (echo) into distance (centimeters) for obstacle avoidance.
+  ultrasonic.h: handles the math for converting sound waves (echo) into distance (centimeters) for obstacle avoidance.
 
-pir.h: Simply reads the digital signal from the motion sensor to trigger security alarms.
+  pir.h: Simply reads the digital signal from the motion sensor to trigger security alarms.
 
-buzzer.h: Generates different sound frequencies for startup beeps vs. security alarms.
+  buzzer.h: Generates different sound frequencies for startup beeps vs. security alarms.
 
-servo_head.h: Controls the servo motor to "look" left and right during autonomous navigation.
+  servo_head.h: Controls the servo motor to "look" left and right during autonomous navigation.
 
 🔌 Pinout & Wiring Diagram
 
